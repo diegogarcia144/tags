@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Etiquetas</title>
+   <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <div class="container">
+       <h1>Estilos de texto y tipografía</h1>
+       
+       <div class="cards-container">
+           <!-- Tarjeta: color -->
+            <div class="card">
+               <div class="card-title">.text { color: blue; }</div>
+               <div class="card-content">
+                  <p class="color-blue">Este texto tiene color azul aplicado mediante la propiedad CSS "color".</p>
+               </div>
+            </div>
+
+            <!-- Tarjeta: text-shadow -->
+            <div class="card">
+               <div class="card-title">.text { text-shadow: 2px 2px 4px #000000; }</div>
+               <div class="card-content">
+                  <p class="text-shadow">Este texto tiene una sombra que se desplaza 2px a la derecha, 2px hacia abajo, con un desenfoque de 4px y color negro.</p>
+               </div>
+            </div>
+
+            <!-- Tarjeta: letter-spacing -->
+            <div class="card">
+               <div class="card-title">.element { letter-spacing: 0.1em; }</div>
+               <div class="card-content">
+                  <p class="letter-spacing">Este texto tiene un espaciado entre letras de 0.1em, lo que mejora la legibilidad en ciertos contextos.</p>
+               </div>
+            </div>
+
+            <!-- Tarjeta: word-spacing -->
+            <div class="card">
+               <div class="card-title">.element { word-spacing: 0.2em; }</div>
+               <div class="card-content">
+                  <p class="word-spacing">Este texto tiene un espaciado entre palabras de 0.2em, lo que crea más distancia entre cada palabra del texto.</p>
+               </div>
+            </div>
+
+            <!-- Tarjeta: line-height -->
+            <div class="card">
+               <div class="card-title">.element { line-height: 2; }</div>
+               <div class="card-content">
+                  <p class="line-height">Este texto tiene una altura de línea doble, lo que aumenta el espacio vertical entre líneas y mejora la legibilidad en párrafos largos como este ejemplo que estamos viendo.</p>
+               </div>
+            </div>
+
+            <!-- Tarjeta: text-align -->
+            <div class="card">
+               <div class="card-title">.element { text-align: right; }</div>
+               <div class="card-content">
+                  <p class="text-align-right">Este texto está alineado a la derecha del contenedor, lo cual se utiliza frecuentemente para alinear valores numéricos o elementos específicos en un diseño.</p>
+               </div>
+            </div>
+
+            <!-- Tarjeta: text-decoration -->
+            <div class="card">
+               <div class="card-title">.element { text-decoration: underline; }</div>
+               <div class="card-content">
+                  <p class="text-decoration-underline">Este texto tiene un subrayado aplicado, comúnmente utilizado para enlaces o para enfatizar palabras importantes.</p>
+               </div>
+            </div>
+
+            <!-- Tarjeta: text-transform -->
+            <div class="card">
+               <div class="card-title">.element { text-transform: uppercase; }</div>
+               <div class="card-content">
+                  <p class="text-transform-uppercase">Este texto se muestra en mayúsculas independientemente de cómo fue escrito originalmente en el HTML.</p>
+               </div>
+            </div>
+
+            <!-- Tarjeta: vertical-align -->
+            <div class="card">
+               <div class="card-title">.element { vertical-align: baseline; }</div>
+               <div class="card-content">
+                  <p>Texto normal <span class="vertical-align-baseline" style="border: 1px solid gray; padding: 3px;">Este elemento</span> está alineado con la línea base del texto.</p>
+               </div>
+            </div>
+
+            <!-- Tarjeta: white-space -->
+            <div class="card">
+               <div class="card-title">.element { white-space: nowrap; }</div>
+               <div class="card-content">
+                  <p class="white-space-nowrap">Este texto no se dividirá en múltiples líneas, sino que se mantendrá en una sola línea, incluso si sobrepasa el ancho del contenedor.</p>
+               </div>
+            </div>
+
+            <!-- Tarjeta: word-wrap -->
+            <div class="card">
+               <div class="card-title">.element { word-wrap: break-word; }</div>
+               <div class="card-content">
+                  <p class="word-wrap">Este texto con palabrasmuylargascomoestaquepuedenromperelcontenedor será dividido al final del contenedor incluso en medio de una palabra si es necesario.</p>
+               </div>
+            </div>
+
+            <!-- Tarjeta: overflow-wrap -->
+            <div class="card">
+               <div class="card-title">.element { overflow-wrap: normal; }</div>
+               <div class="card-content">
+                  <p class="overflow-wrap">Este texto con palabrasmuylargascomoestaquepuedenromperelcontenedor solo se dividirá en los puntos normales de división (espacios) incluso si se sale del contenedor.</p>
+               </div>
+            </div>
+
+            <!-- Tarjeta: font-family -->
+            <div class="card">
+               <div class="card-title">.element { font-family: 'Roboto', sans-serif; }</div>
+               <div class="card-content">
+                  <p class="font-family">Este texto utiliza la fuente Roboto, y si no está disponible, usará cualquier fuente sans-serif del sistema.</p>
+               </div>
+            </div>
+
+            <!-- Tarjeta: font-size -->
+            <div class="card">
+               <div class="card-title">.element { font-size: 0.75rem; }</div>
+               <div class="card-content">
+                  <p class="font-size-small">Este texto tiene un tamaño de fuente de 0.75rem, lo que lo hace más pequeño que el texto normal del documento.</p>
+               </div>
+            </div>
+
+            <!-- Tarjeta: font-weight -->
+            <div class="card">
+               <div class="card-title">.element { font-weight: 600; }</div>
+               <div class="card-content">
+                  <p class="font-weight-semibold">Este texto tiene un peso de fuente semibold (600), que es más grueso que el normal pero menos que el bold (700).</p>
+               </div>
+            </div>
+
+            <!-- Tarjeta: font-style -->
+            <div class="card">
+               <div class="card-title">.element { font-style: italic; }</div>
+               <div class="card-content">
+                  <p class="font-style-italic">Este texto tiene estilo itálico aplicado, lo que inclina los caracteres y les da un aspecto cursivo.</p>
+               </div>
+            </div>
+
+            <!-- Tarjeta: text-overflow -->
+            <div class="card">
+               <div class="card-title">.element { text-overflow: ellipsis; }</div>
+               <div class="card-content">
+                  <p class="text-overflow" style="white-space: nowrap; overflow: hidden; width: 100%;">Este texto es demasiado largo para el contenedor y en lugar de cortarse abruptamente, muestra puntos suspensivos al final para indicar que hay más contenido.</p>
+               </div>
+            </div>
+
+            <!-- Tarjeta: text-decoration-color -->
+            <div class="card">
+               <div class="card-title">.element { text-decoration-color: yellow; }</div>
+               <div class="card-content">
+                  <p class="text-decoration-color" style="text-decoration: underline;">Este texto tiene un subrayado de color amarillo en lugar del color por defecto del texto.</p>
+               </div>
+            </div>
+
+            <!-- Tarjeta: text-decoration-style -->
+            <div class="card">
+               <div class="card-title">.element { text-decoration-style: dotted; }</div>
+               <div class="card-content">
+                  <p class="text-decoration-style" style="text-decoration: underline;">Este texto tiene un subrayado con estilo punteado en lugar del estilo sólido por defecto.</p>
+               </div>
+            </div>
+
+            <!-- Tarjeta: text-decoration-thickness -->
+            <div class="card">
+               <div class="card-title">.element { text-decoration-thickness: 2px; }</div>
+               <div class="card-content">
+                  <p class="text-decoration-thickness" style="text-decoration: underline;">Este texto tiene un subrayado con un grosor de 2px, más grueso que el subrayado predeterminado.</p>
+               </div>
+            </div>
+
+            <!-- Tarjeta: text-align-last -->
+            <div class="card">
+               <div class="card-title">.element { text-align-last: right; }</div>
+               <div class="card-content">
+                  <p class="text-align-last">Este párrafo tiene múltiples líneas de texto, pero la última línea está alineada a la derecha gracias a la propiedad text-align-last. Esta propiedad solo afecta a la última línea del párrafo.</p>
+               </div>
+            </div>
+
+            <!-- Tarjeta: text-justify -->
+            <div class="card">
+               <div class="card-title">.element { text-justify: justify; }</div>
+               <div class="card-content">
+                  <p class="text-justify" style="text-align: justify;">Este texto está justificado y utiliza el método de justificación especificado por text-justify. Esta propiedad controla cómo se aplica la justificación cuando text-align es justify.</p>
+               </div>
+            </div>
+
+            <!-- Tarjeta: line-break -->
+            <div class="card">
+               <div class="card-title">.element { line-break: break-all; }</div>
+               <div class="card-content">
+                  <p class="line-break">Este texto con caracteres asiáticos como これは日本語のテキストです tendrá reglas específicas de salto de línea, especialmente útil para idiomas CJK (chino, japonés y coreano).</p>
+               </div>
+            </div>
+
+            <!-- Tarjeta: word-break -->
+            <div class="card">
+               <div class="card-title">.element { word-break: break-all; }</div>
+               <div class="card-content">
+                  <p class="word-break">Este texto puede romperse en cualquier carácter para evitar desbordamientos, incluso en medio de palabras como supercalifragilisticoespialidoso.</p>
+               </div>
+            </div>
+
+            <!-- Tarjeta: hyphens -->
+            <div class="card">
+               <div class="card-title">.element { hyphens: auto; }</div>
+               <div class="card-content">
+                  <p class="hyphens-auto" style="text-align: justify; width: 100%;">Este texto utilizará guiones automáticos en palabras largas cuando sea necesario para mantener un espaciado consistente en texto justificado, especialmente con palabras como supercalifragilisticoespialidoso.</p>
+               </div>
+            </div>
+       </div>
+   </div>
+   
+</body>
+</html>

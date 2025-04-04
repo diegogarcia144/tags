@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bordes y Fondos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Bordes y fondos</h1>
+        <div class="cards-container">
+            <!-- Tarjeta: background-color -->
+        <div class="card">
+            <div class="card-title">.element { background-color: yellow; }</div>
+            <div class="card-content">
+                <div class="background-color-yellow">
+                    Este elemento tiene un fondo amarillo.
+                </div>
+            </div>
+        </div>
+
+        <!-- Tarjeta: text-shadow -->
+        <div class="card">
+            <div class="card-title">.text { text-shadow: 2px 2px 4px #000000; }</div>
+            <div class="card-content">
+                <p class="text-shadow">Este texto tiene sombra</p>
+                <p>La sombra está 2px a la derecha, 2px abajo y con un desenfoque de 4px.</p>
+            </div>
+        </div>
+
+        <!-- Tarjeta: border-color -->
+        <div class="card">
+            <div class="card-title">.box { border-color: pink; }</div>
+            <div class="card-content">
+                <div class="border-color-pink">
+                    Este elemento tiene un borde de color rosa.
+                </div>
+            </div>
+        </div>
+
+        <!-- Tarjeta: border-radius -->
+        <div class="card">
+            <div class="card-title">.element { border-radius: 8px; }</div>
+            <div class="card-content">
+                <div class="border-radius-8px">
+                    Este elemento tiene esquinas redondeadas con un radio de 8px.
+                </div>
+            </div>
+        </div>
+
+        <!-- Tarjeta: border-width -->
+        <div class="card">
+            <div class="card-title">.element { border-width: 4px; }</div>
+            <div class="card-content">
+                <div class="border-width-4px">
+                    Este elemento tiene un borde con un ancho de 4px.
+                </div>
+            </div>
+        </div>
+
+        <!-- Tarjeta: border-style -->
+        <div class="card">
+            <div class="card-title">.element { border-style: dashed; }</div>
+            <div class="card-content">
+                <div class="border-style-dashed">
+                    Este elemento tiene un borde con estilo discontinuo (dashed).
+                </div>
+            </div>
+        </div>
+
+        <!-- Tarjeta: border-collapse -->
+        <div class="card">
+            <div class="card-title">.element { border-collapse: collapse; }</div>
+            <div class="card-content">
+                <table class="border-collapse-example">
+                    <tr>
+                        <td style="border: 1px solid #333; padding: 5px;">Celda 1</td>
+                        <td style="border: 1px solid #333; padding: 5px;">Celda 2</td>
+                    </tr>
+                    <tr>
+                        <td style="border: 1px solid #333; padding: 5px;">Celda 3</td>
+                        <td style="border: 1px solid #333; padding: 5px;">Celda 4</td>
+                    </tr>
+                </table>
+                <p>Los bordes de las celdas están colapsados (no hay espacio entre ellos).</p>
+            </div>
+        </div>
+
+        <!-- Tarjeta: border-spacing -->
+        <div class="card">
+            <div class="card-title">.element { border-spacing: 4px; }</div>
+            <div class="card-content">
+                <table class="border-spacing-example">
+                    <tr>
+                        <td style="border: 1px solid #333; padding: 5px;">Celda 1</td>
+                        <td style="border: 1px solid #333; padding: 5px;">Celda 2</td>
+                    </tr>
+                    <tr>
+                        <td style="border: 1px solid #333; padding: 5px;">Celda 3</td>
+                        <td style="border: 1px solid #333; padding: 5px;">Celda 4</td>
+                    </tr>
+                </table>
+                <p>Hay un espacio de 4px entre los bordes de las celdas.</p>
+            </div>
+        </div>
+
+        <!-- Tarjeta: outline -->
+        <div class="card">
+            <div class="card-title">.element { outline: none; }</div>
+            <div class="card-content">
+                <input type="text" value="Input sin outline al hacer focus" class="outline-none">
+                <p>Haz clic en el campo de texto para ver que no aparece el contorno de focus.</p>
+            </div>
+        </div>
+
+        <!-- Tarjeta: overflow -->
+        <div class="card">
+            <div class="card-title">.element { overflow: hidden; }</div>
+            <div class="card-content">
+                <div class="overflow-container">
+                    <div class="both-directions">
+                        Este contenido es más grande que su contenedor tanto en ancho como en alto.
+                        Este contenido es más grande que su contenedor tanto en ancho como en alto.
+                        Este contenido es más grande que su contenedor tanto en ancho como en alto.
+                        Este contenido es más grande que su contenedor tanto en ancho como en alto.
+                    </div>
+                </div>
+                <p>El contenido que excede los límites del contenedor queda oculto.</p>
+            </div>
+        </div>
+
+        <!-- Tarjeta: overflow-x -->
+        <div class="card">
+            <div class="card-title">.element { overflow-x: hidden; }</div>
+            <div class="card-content">
+                <div class="overflow-x-container">
+                    <div class="long-content">
+                        Este contenido es más ancho que su contenedor. Este contenido es más ancho que su contenedor.
+                        Este contenido es más ancho que su contenedor. Este contenido es más ancho que su contenedor.
+                        Este contenido es más ancho que su contenedor. Este contenido es más ancho que su contenedor.
+                    </div>
+                </div>
+                <p>El contenido que excede horizontalmente queda oculto, pero se puede desplazar verticalmente.</p>
+            </div>
+        </div>
+
+        <!-- Tarjeta: overflow-y -->
+        <div class="card">
+            <div class="card-title">.element { overflow-y: hidden; }</div>
+            <div class="card-content">
+                <div class="overflow-y-container">
+                    <div class="tall-content">
+                        Este contenido es más alto que su contenedor.<br>
+                        Este contenido es más alto que su contenedor.<br>
+                        Este contenido es más alto que su contenedor.<br>
+                        Este contenido es más alto que su contenedor.<br>
+                        Este contenido es más alto que su contenedor.<br>
+                        Este contenido es más alto que su contenedor.<br>
+                    </div>
+                </div>
+                <p>El contenido que excede verticalmente queda oculto, pero se puede desplazar horizontalmente.</p>
+            </div>
+        </div>
+
+        <!-- Tarjeta: border -->
+        <div class="card">
+            <div class="card-title">.element { border: 1px solid #000000; }</div>
+            <div class="card-content">
+                <div class="border-regular">
+                    Este elemento tiene un borde completo de 1px sólido y negro.
+                </div>
+            </div>
+        </div>
+
+        <!-- Tarjeta: border-top -->
+        <div class="card">
+            <div class="card-title">.element { border-top: 2px solid #000000; }</div>
+            <div class="card-content">
+                <div class="border-top">
+                    Este elemento tiene un borde superior de 2px sólido y negro.
+                </div>
+            </div>
+        </div>
+
+        <!-- Tarjeta: border-right -->
+        <div class="card">
+            <div class="card-title">.element { border-right: 4px solid #000000; }</div>
+            <div class="card-content">
+                <div class="border-right">
+                    Este elemento tiene un borde derecho de 4px sólido y negro.
+                </div>
+            </div>
+        </div>
+
+        <!-- Tarjeta: border-bottom -->
+        <div class="card">
+            <div class="card-title">.element { border-bottom: 1px solid #000000; }</div>
+            <div class="card-content">
+                <div class="border-bottom">
+                    Este elemento tiene un borde inferior de 1px sólido y negro.
+                </div>
+            </div>
+        </div>
+
+        <!-- Tarjeta: border-left -->
+        <div class="card">
+            <div class="card-title">.element { border-left: 1px solid #000000; }</div>
+            <div class="card-content">
+                <div class="border-left">
+                    Este elemento tiene un borde izquierdo de 1px sólido y negro.
+                </div>
+            </div>
+        </div>
+
+        <!-- Tarjeta: border con rgba -->
+        <div class="card">
+            <div class="card-title">.element { border: 1px solid rgba(255, 255, 0, 0.6) }</div>
+            <div class="card-content">
+                <div class="border-rgba">
+                    Este elemento tiene un borde amarillo semi-transparente (60% de opacidad).
+                </div>
+            </div>
+        </div>
+
+        <!-- Tarjeta: border-top para hijos -->
+        <div class="card">
+            <div class="card-title">.element > * { border-top: 1px solid #000000; }</div>
+            <div class="card-content">
+                <div class="parent-border children-top-border">
+                    <div>Elemento hijo 1 con borde superior</div>
+                    <div>Elemento hijo 2 con borde superior</div>
+                    <div>Elemento hijo 3 con borde superior</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Tarjeta: border-left para hijos -->
+        <div class="card">
+            <div class="card-title">.element > * { border-left: 1px solid #000000; }</div>
+            <div class="card-content">
+                <div class="parent-border children-left-border">
+                    <div>Elemento hijo 1 con borde izquierdo</div>
+                    <div>Elemento hijo 2 con borde izquierdo</div>
+                    <div>Elemento hijo 3 con borde izquierdo</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Tarjeta: border-color para hijos -->
+        <div class="card">
+            <div class="card-title">.element > * { border-color: rgba(0, 0, 0, 0.75); }</div>
+            <div class="card-content">
+                <div class="parent-border children-border-color">
+                    <div>Elemento hijo 1 con borde negro semi-transparente</div>
+                    <div>Elemento hijo 2 con borde negro semi-transparente</div>
+                    <div>Elemento hijo 3 con borde negro semi-transparente</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Tarjeta: border-style para hijos -->
+        <div class="card">
+            <div class="card-title">.element > * { border-style: dashed; }</div>
+            <div class="card-content">
+                <div class="parent-border children-border-style">
+                    <div>Elemento hijo 1 con borde discontinuo</div>
+                    <div>Elemento hijo 2 con borde discontinuo</div>
+                    <div>Elemento hijo 3 con borde discontinuo</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Tarjeta: border-top-width para hijos -->
+        <div class="card">
+            <div class="card-title">.element > * { border-top-width: 2px; }</div>
+            <div class="card-content">
+                <div class="parent-border children-top-width">
+                    <div>Elemento hijo 1 con borde superior más grueso</div>
+                    <div>Elemento hijo 2 con borde superior más grueso</div>
+                    <div>Elemento hijo 3 con borde superior más grueso</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Tarjeta: vertical-align (ejemplo base) -->
+        <div class="card">
+            <div class="card-title">.element { vertical-align: baseline; }</div>
+            <div class="card-content">
+                <p>Texto normal <span class="vertical-align-baseline" style="border: 1px solid gray; padding: 3px;">Este elemento</span> está alineado con la línea base del texto.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

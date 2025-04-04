@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etiquetas</title>
+    <link rel="stylesheet" href="styles1.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Efectos visuales y transformaciones</h1>
+        
+        <div class="cards-container">
+
+            <!-- Tarjeta: opacity -->
+            <div class="card">
+                <div class="card-title">.element { opacity: 0.75; }</div>
+                <div class="card-content">
+                <div class="example-container">
+                    <div class="opacity-example">
+                    <div class="normal-opacity">Opacidad normal</div>
+                    <div class="reduced-opacity">Opacidad 0.75</div>
+                    </div>
+                </div>
+                <p class="description">Controla la transparencia de un elemento. Un valor de 1 es completamente opaco, 0 es invisible.</p>
+                </div>
+            </div>
+            
+            <!-- Tarjeta: transform rotate -->
+            <div class="card">
+                <div class="card-title">.element { transform: rotate(45deg); }</div>
+                <div class="card-content">
+                <div class="example-container">
+                    <div class="rotate-example">
+                    <div class="normal-box">Normal</div>
+                    <div class="rotated-box">Rotado 45°</div>
+                    </div>
+                </div>
+                <p class="description">Rota un elemento alrededor de su punto de transformación.</p>
+                </div>
+            </div>
+            
+            <!-- Tarjeta: transform-origin -->
+            <div class="card">
+                <div class="card-title">.element { transform-origin: center; }</div>
+                <div class="card-content">
+                <div class="example-container">
+                    <div class="transform-origin-example">
+                    <div class="origin-center">Origen: centro</div>
+                    <div class="origin-corner">Origen: esquina</div>
+                    </div>
+                </div>
+                <p class="description">Define el punto de origen para las transformaciones de un elemento.</p>
+                </div>
+            </div>
+            
+            <!-- Tarjeta: transform scale -->
+            <div class="card">
+                <div class="card-title">.element { transform: scale(1.5); }</div>
+                <div class="card-content">
+                <div class="example-container">
+                    <div class="scale-example">
+                    <div class="normal-box">Normal</div>
+                    <div class="scaled-box">Escalado 1.5x</div>
+                    </div>
+                </div>
+                <p class="description">Aumenta o disminuye el tamaño de un elemento.</p>
+                </div>
+            </div>
+            
+            <!-- Tarjeta: transform rotate 90 -->
+            <div class="card">
+                <div class="card-title">.element { transform: rotate(90deg); }</div>
+                <div class="card-content">
+                <div class="example-container">
+                    <div class="rotate90-example">
+                    <div class="normal-box">Normal</div>
+                    <div class="rotated90-box">Rotado 90°</div>
+                    </div>
+                </div>
+                <p class="description">Rota un elemento 90 grados en sentido horario.</p>
+                </div>
+            </div>
+            
+            <!-- Tarjeta: transform skewX -->
+            <div class="card">
+                <div class="card-title">.element { transform: skewX(6deg); }</div>
+                <div class="card-content">
+                <div class="example-container">
+                    <div class="skew-example">
+                    <div class="normal-box">Normal</div>
+                    <div class="skewed-box">Sesgado 6°</div>
+                    </div>
+                </div>
+                <p class="description">Inclina un elemento a lo largo del eje X.</p>
+                </div>
+            </div>
+            
+            <!-- Tarjeta: transform translateX -->
+            <div class="card">
+                <div class="card-title">.element { transform: translateX(-4px); }</div>
+                <div class="card-content">
+                <div class="example-container">
+                    <div class="translate-example">
+                    <div class="normal-box">Normal</div>
+                    <div class="translated-box">Desplazado -4px</div>
+                    </div>
+                </div>
+                <p class="description">Mueve un elemento horizontalmente.</p>
+                </div>
+            </div>
+            
+            <!-- Tarjeta: perspective -->
+            <div class="card">
+                <div class="card-title">.element { perspective: 500px; }</div>
+                <div class="card-content">
+                <div class="example-container perspective-container">
+                    <div class="perspective-example">
+                    <div class="with-perspective">Con perspectiva</div>
+                    </div>
+                </div>
+                <p class="description">Define la distancia entre el observador y el plano z=0, dando una vista 3D.</p>
+                </div>
+            </div>
+            
+            <!-- Tarjeta: backface-visibility -->
+            <div class="card">
+                <div class="card-title">.element { backface-visibility: hidden; }</div>
+                <div class="card-content">
+                <div class="example-container">
+                    <div class="backface-example">
+                    <div class="backface-visible">Cara trasera visible</div>
+                    <div class="backface-hidden">Cara trasera oculta</div>
+                    </div>
+                </div>
+                <p class="description">Determina si la cara posterior de un elemento es visible cuando se gira.</p>
+                </div>
+            </div>
+            
+            <!-- Tarjeta: z-index -->
+            <div class="card">
+                <div class="card-title">.element { z-index: 10; }</div>
+                <div class="card-content">
+                <div class="example-container">
+                    <div class="zindex-example">
+                    <div class="zindex-1">z-index: 1</div>
+                    <div class="zindex-10">z-index: 10</div>
+                    </div>
+                </div>
+                <p class="description">Controla el orden de apilamiento de elementos posicionados.</p>
+                </div>
+            </div>
+            
+            <!-- Tarjeta: pointer-events -->
+            <div class="card">
+                <div class="card-title">.element { pointer-events: none; }</div>
+                <div class="card-content">
+                <div class="example-container">
+                    <div class="pointer-events-example">
+                    <button class="normal-button">Click normal</button>
+                    <button class="no-pointer-events">No reacciona al click</button>
+                    </div>
+                </div>
+                <p class="description">Especifica si un elemento responde a eventos del puntero (click, hover).</p>
+                </div>
+            </div>
+            
+            <!-- Tarjeta: resize -->
+            <div class="card">
+                <div class="card-title">.element { resize: none; }</div>
+                <div class="card-content">
+                <div class="example-container">
+                    <div class="resize-example">
+                    <textarea class="resize-all">Redimensionable</textarea>
+                    <textarea class="resize-none">No redimensionable</textarea>
+                    </div>
+                </div>
+                <p class="description">Controla si un elemento puede ser redimensionado por el usuario.</p>
+                </div>
+            </div>
+            
+            <!-- Tarjeta: cursor -->
+            <div class="card">
+                <div class="card-title">.element { cursor: pointer; }</div>
+                <div class="card-content">
+                <div class="example-container">
+                    <div class="cursor-example">
+                    <div class="cursor-default">Cursor por defecto</div>
+                    <div class="cursor-pointer">Cursor pointer</div>
+                    </div>
+                </div>
+                <p class="description">Establece el tipo de cursor que se muestra al pasar sobre un elemento.</p>
+                </div>
+            </div>
+            
+            <!-- Tarjeta: user-select -->
+            <div class="card">
+                <div class="card-title">.element { user-select: none; }</div>
+                <div class="card-content">
+                <div class="example-container">
+                    <div class="user-select-example">
+                    <p class="selectable">Este texto se puede seleccionar</p>
+                    <p class="not-selectable">Este texto no se puede seleccionar</p>
+                    </div>
+                </div>
+                <p class="description">Controla si el usuario puede seleccionar el texto de un elemento.</p>
+                </div>
+            </div>
+            
+            <!-- Tarjeta: filter grayscale -->
+            <div class="card">
+                <div class="card-title">.element { filter: grayscale(50%); }</div>
+                <div class="card-content">
+                <div class="example-container">
+                    <div class="filter-example">
+                    <div class="color-box">Color normal</div>
+                    <div class="grayscale-box">50% escala de grises</div>
+                    </div>
+                </div>
+                <p class="description">Aplica efectos visuales como escala de grises a un elemento.</p>
+                </div>
+            </div>
+            
+            <!-- Tarjeta: backdrop-filter blur -->
+            <div class="card">
+                <div class="card-title">.element { backdrop-filter: blur(10px); }</div>
+                <div class="card-content">
+                <div class="example-container backdrop-filter-container">
+                    <div class="backdrop-example">
+                    <div class="backdrop-normal">Sin efecto</div>
+                    <div class="backdrop-blur">Con desenfoque</div>
+                    </div>
+                </div>
+                <p class="description">Aplica efectos visuales al área detrás de un elemento.</p>
+                </div>
+            </div>
+            
+            <!-- Tarjeta: mix-blend-mode -->
+            <div class="card">
+                <div class="card-title">.element { mix-blend-mode: screen; }</div>
+                <div class="card-content">
+                <div class="example-container">
+                    <div class="blend-mode-example">
+                    <div class="blend-normal">Mezcla normal</div>
+                    <div class="blend-screen">Mezcla screen</div>
+                    </div>
+                </div>
+                <p class="description">Determina cómo un elemento se mezcla con el contenido de su fondo.</p>
+                </div>
+            </div>
+            
+            <!-- Tarjeta: clip-path -->
+            <div class="card">
+                <div class="card-title">.element { clip-path: polygon(0 0, 100% 0, 100% 75%, 0 100%); }</div>
+                <div class="card-content">
+                <div class="example-container">
+                    <div class="clip-path-example">
+                    <div class="normal-box">Sin recorte</div>
+                    <div class="clipped-box">Con recorte</div>
+                    </div>
+                </div>
+                <p class="description">Crea una región de recorte que define qué parte de un elemento es visible.</p>
+                </div>
+            </div>
+            
+            <!-- Tarjeta: will-change -->
+            <div class="card">
+                <div class="card-title">.element { will-change: transform; }</div>
+                <div class="card-content">
+                <div class="example-container">
+                    <div class="will-change-example">
+                    <div class="no-will-change">Sin will-change</div>
+                    <div class="with-will-change">Con will-change</div>
+                    </div>
+                </div>
+                <p class="description">Avisa al navegador que un elemento cambiará, optimizando el rendimiento.</p>
+                </div>
+            </div>
+            
+            <!-- Tarjeta: isolation -->
+            <div class="card">
+                <div class="card-title">.element { isolation: isolate; }</div>
+                <div class="card-content">
+                <div class="example-container">
+                    <div class="isolation-example">
+                    <div class="no-isolation">Sin aislamiento</div>
+                    <div class="with-isolation">Con aislamiento</div>
+                    </div>
+                </div>
+                <p class="description">Crea un nuevo contexto de apilamiento, aislando las mezclas de elementos.</p>
+                </div>
+            </div>
+            
+            <!-- Tarjeta: shape-outside -->
+            <div class="card">
+                <div class="card-title">.element { shape-outside: circle(50%); }</div>
+                <div class="card-content">
+                <div class="example-container">
+                    <div class="shape-outside-example">
+                    <div class="no-shape">
+                        <div class="shape-float"></div>
+                        <p>Texto sin shape-outside aplicado al elemento flotante.</p>
+                    </div>
+                    <div class="with-shape">
+                        <div class="shape-float circle-shape"></div>
+                        <p>Texto con shape-outside: circle(50%) aplicado al elemento flotante.</p>
+                    </div>
+                    </div>
+                </div>
+                <p class="description">Define una forma alrededor de la cual fluye el contenido adyacente.</p>
+                </div>
+            </div>
+            
+            <!-- Tarjeta: backdrop-filter-opacity -->
+            <div class="card">
+                <div class="card-title">.element { backdrop-filter: opacity(50%); }</div>
+                <div class="card-content">
+                <div class="example-container backdrop-filter-container">
+                    <div class="backdrop-example">
+                    <div class="backdrop-normal">Sin efecto</div>
+                    <div class="backdrop-opacity">Con filtro de opacidad</div>
+                    </div>
+                </div>
+                <p class="description">Ajusta la opacidad del fondo detrás de un elemento.</p>
+                </div>
+            </div>
+            
+            <!-- Tarjeta: backdrop-filter blur -->
+            <div class="card">
+                <div class="card-title">.element { backdrop-filter: blur(8px); }</div>
+                <div class="card-content">
+                <div class="example-container backdrop-filter-container">
+                    <div class="backdrop-example">
+                    <div class="backdrop-normal">Sin efecto</div>
+                    <div class="backdrop-blur-8px">Con desenfoque 8px</div>
+                    </div>
+                </div>
+                <p class="description">Aplica un efecto de desenfoque al área detrás de un elemento.</p>
+                </div>
+            </div>
+            
+            <!-- Tarjeta: backdrop-filter brightness -->
+            <div class="card">
+                <div class="card-title">.element { backdrop-filter: brightness(75%); }</div>
+                <div class="card-content">
+                <div class="example-container backdrop-filter-container">
+                    <div class="backdrop-example">
+                    <div class="backdrop-normal">Sin efecto</div>
+                    <div class="backdrop-brightness">Con brillo 75%</div>
+                    </div>
+                </div>
+                <p class="description">Ajusta el brillo del fondo detrás de un elemento.</p>
+                </div>
+            </div>
+            
+            <!-- Tarjeta: backdrop-filter contrast -->
+            <div class="card">
+                <div class="card-title">.element { backdrop-filter: contrast(125%); }</div>
+                <div class="card-content">
+                <div class="example-container backdrop-filter-container">
+                    <div class="backdrop-example">
+                    <div class="backdrop-normal">Sin efecto</div>
+                    <div class="backdrop-contrast">Con contraste 125%</div>
+                    </div>
+                </div>
+                <p class="description">Ajusta el contraste del fondo detrás de un elemento.</p>
+                </div>
+            </div>
+            
+            <!-- Tarjeta: backdrop-filter grayscale -->
+            <div class="card">
+                <div class="card-title">.element { backdrop-filter: grayscale(50%); }</div>
+                <div class="card-content">
+                <div class="example-container backdrop-filter-container">
+                    <div class="backdrop-example">
+                    <div class="backdrop-normal">Sin efecto</div>
+                    <div class="backdrop-grayscale">Con escala de grises 50%</div>
+                    </div>
+                </div>
+                <p class="description">Convierte el fondo detrás de un elemento a escala de grises.</p>
+                </div>
+            </div>
+            
+            <!-- Tarjeta: backdrop-filter hue-rotate -->
+            <div class="card">
+                <div class="card-title">.element { backdrop-filter: hue-rotate(90deg); }</div>
+                <div class="card-content">
+                <div class="example-container backdrop-filter-container">
+                    <div class="backdrop-example">
+                    <div class="backdrop-normal">Sin efecto</div>
+                    <div class="backdrop-hue-rotate">Con rotación de tono 90°</div>
+                    </div>
+                </div>
+                <p class="description">Rota los colores del fondo detrás de un elemento.</p>
+                </div>
+            </div>
+            
+            <!-- Tarjeta: backdrop-filter invert -->
+            <div class="card">
+                <div class="card-title">.element { backdrop-filter: invert(100%); }</div>
+                <div class="card-content">
+                <div class="example-container backdrop-filter-container">
+                    <div class="backdrop-example">
+                    <div class="backdrop-normal">Sin efecto</div>
+                    <div class="backdrop-invert">Con inversión</div>
+                    </div>
+                </div>
+                <p class="description">Invierte los colores del fondo detrás de un elemento.</p>
+                </div>
+            </div>
+            
+            <!-- Tarjeta: backdrop-filter opacity -->
+            <div class="card">
+                <div class="card-title">.element { backdrop-filter: opacity(50%); }</div>
+                <div class="card-content">
+                <div class="example-container backdrop-filter-container">
+                    <div class="backdrop-example">
+                    <div class="backdrop-normal">Sin efecto</div>
+                    <div class="backdrop-opacity-50">Con opacidad 50%</div>
+                    </div>
+                </div>
+                <p class="description">Ajusta la opacidad del fondo detrás de un elemento.</p>
+                </div>
+            </div>
+            
+            <!-- Tarjeta: backdrop-filter saturate -->
+            <div class="card">
+                <div class="card-title">.element { backdrop-filter: saturate(150%); }</div>
+                <div class="card-content">
+                <div class="example-container backdrop-filter-container">
+                    <div class="backdrop-example">
+                    <div class="backdrop-normal">Sin efecto</div>
+                    <div class="backdrop-saturate">Con saturación 150%</div>
+                    </div>
+                </div>
+                <p class="description">Ajusta la saturación del fondo detrás de un elemento.</p>
+                </div>
+            </div>
+            
+            <!-- Tarjeta: backdrop-filter sepia -->
+            <div class="card">
+                <div class="card-title">.element { backdrop-filter: sepia(50%); }</div>
+                <div class="card-content">
+                <div class="example-container backdrop-filter-container">
+                    <div class="backdrop-example">
+                    <div class="backdrop-normal">Sin efecto</div>
+                    <div class="backdrop-sepia">Con sepia 50%</div>
+                    </div>
+                </div>
+                <p class="description">Aplica un tono sepia al fondo detrás de un elemento.</p>
+                </div>
+            </div>
+            
+            <!-- Tarjeta: mix-blend-mode darken -->
+            <div class="card">
+                <div class="card-title">.element { mix-blend-mode: darken; }</div>
+                <div class="card-content">
+                <div class="example-container">
+                    <div class="blend-mode-example">
+                    <div class="blend-normal-darken">Mezcla normal</div>
+                    <div class="blend-darken">Mezcla darken</div>
+                    </div>
+                </div>
+                <p class="description">Oscurece la mezcla donde el elemento se superpone con el fondo.</p>
+                </div>
+            </div>
+            
+            <!-- Tarjeta: overscroll-behavior -->
+            <div class="card">
+                <div class="card-title">.element { overscroll-behavior: contain; }</div>
+                <div class="card-content">
+                <div class="example-container">
+                    <div class="overscroll-example">
+                    <div class="overscroll-auto">Comportamiento auto</div>
+                    <div class="overscroll-contain">Comportamiento contain</div>
+                    </div>
+                </div>
+                <p class="description">Controla el comportamiento del navegador cuando el scroll llega al límite.</p>
+                </div>
+            </div>
+            
+            <!-- Tarjeta: overscroll-behavior-x -->
+            <div class="card">
+                <div class="card-title">.element { overscroll-behavior-x: contain; }</div>
+                <div class="card-content">
+                <div class="example-container">
+                    <div class="overscroll-example">
+                    <div class="overscroll-x-auto">Comportamiento X auto</div>
+                    <div class="overscroll-x-contain">Comportamiento X contain</div>
+                    </div>
+                </div>
+                <p class="description">Controla el comportamiento horizontal del navegador cuando el scroll llega al límite.</p>
+                </div>
+            </div>
+            
+            <!-- Tarjeta: overscroll-behavior-y -->
+            <div class="card">
+                <div class="card-title">.element { overscroll-behavior-y: contain; }</div>
+                <div class="card-content">
+                <div class="example-container">
+                    <div class="overscroll-example">
+                    <div class="overscroll-y-auto">Comportamiento Y auto</div>
+                    <div class="overscroll-y-contain">Comportamiento Y contain</div>
+                    </div>
+                </div>
+                <p class="description">Controla el comportamiento vertical del navegador cuando el scroll llega al límite.</p>
+                </div>
+            </div>
+            
+            <!-- Tarjeta: scroll-behavior -->
+            <div class="card">
+                <div class="card-title">.element { scroll-behavior: smooth; }</div>
+                <div class="card-content">
+                <div class="example-container">
+                    <div class="scroll-behavior-example">
+                    <div class="scroll-auto">Desplazamiento automático</div>
+                    <div class="scroll-smooth">Desplazamiento suave</div>
+                    </div>
+                </div>
+                <p class="description">Especifica si los desplazamientos son instantáneos o animados suavemente.</p>
+                </div>
+            </div>
+            
+            <!-- Tarjeta: transform-style -->
+            <div class="card">
+                <div class="card-title">.element { transform-style: preserve-3d; }</div>
+                <div class="card-content">
+                <div class="example-container">
+                    <div class="transform-style-example">
+                    <div class="flat-3d">Transform-style: flat</div>
+                    <div class="preserve-3d">Transform-style: preserve-3d</div>
+                    </div>
+                </div>
+                <p class="description">Determina si los elementos hijos se posicionan en espacio 3D o se aplanan.</p>
+                </div>
+            </div>
+            
+            <!-- Tarjeta: perspective-origin -->
+            <div class="card">
+                <div class="card-title">.element { perspective-origin: bottom; }</div>
+                <div class="card-content">
+                  <div class="example-container">
+                    <div class="perspective-origin-example">
+                      <div class="perspective-origin-center">
+                        <div>Origen: centro</div>
+                      </div>
+                      <div class="perspective-origin-bottom">
+                        <div>Origen: inferior</div>
+                      </div>
+                    </div>
+                  </div>
+                  <p class="description">Define la posición desde la que se ve un elemento con perspectiva.</p>
+                </div>
+              </div>
+            
+            <!-- Tarjeta: transform-box -->
+            <div class="card">
+                <div class="card-title">.element { transform-box: border-box; }</div>
+                <div class="card-content">
+                <div class="example-container">
+                    <div class="transform-box-example">
+                    <div class="transform-content-box">transform-box: content-box</div>
+                    <div class="transform-border-box">transform-box: border-box</div>
+                    </div>
+                </div>
+                <p class="description">Define el cuadro de referencia para las propiedades de transformación.</p>
+                </div>
+            </div>
+            
+            <!-- Tarjeta: transform-origin-x -->
+            <div class="card">
+                <div class="card-title">.element { transform-origin: left center; }</div>
+                <div class="card-content">
+                <div class="example-container">
+                    <div class="transform-origin-x-example">
+                    <div class="origin-center-x">Origen X: centro</div>
+                    <div class="origin-left-x">Origen X: izquierda</div>
+                    </div>
+                </div>
+                <p class="description">Define el punto de origen horizontal para transformaciones.</p>
+                </div>
+            </div>
+            
+            <!-- Tarjeta: transform-origin-y -->
+            <div class="card">
+                <div class="card-title">.element { transform-origin: center top; }</div>
+                <div class="card-content">
+                <div class="example-container">
+                    <div class="transform-origin-y-example">
+                    <div class="origin-center-y">Origen Y: centro</div>
+                    <div class="origin-top-y">Origen Y: superior</div>
+                    </div>
+                </div>
+                <p class="description">Define el punto de origen vertical para transformaciones.</p>
+                </div>
+            </div>
+            
+            <!-- Tarjeta: transform-origin-z -->
+            <div class="card">
+                <div class="card-title">.element { transform-origin: center center -50px; }</div>
+                <div class="card-content">
+                <div class="example-container">
+                    <div class="transform-origin-z-example">
+                    <div class="origin-center-z">Sin Z definido</div>
+                    <div class="origin-back-z">Con Z: -50px</div>
+                    </div>
+                </div>
+                <p class="description">Define el punto de origen en el eje Z para transformaciones 3D.</p>
+                </div>
+            </div>
+            
+            <!-- Tarjeta: object-fit -->
+            <div class="card">
+                <div class="card-title">.element { object-fit: contain; }</div>
+                <div class="card-content">
+                <div class="example-container">
+                    <div class="object-fit-example">
+                    <div class="object-fit-fill">
+                        <div class="image-placeholder fill">object-fit: fill</div>
+                    </div>
+                    <div class="object-fit-contain">
+                        <div class="image-placeholder contain">object-fit: contain</div>
+                    </div>
+                    </div>
+                </div>
+                <p class="description">Especifica cómo un elemento reemplazado debe ajustarse a su contenedor.</p>
+                </div>
+            </div>
+            
+            <!-- Tarjeta: object-position -->
+            <div class="card">
+                <div class="card-title">.element { object-position: center; }</div>
+                <div class="card-content">
+                  <div class="example-container">
+                    <div class="object-position-example">
+                      <div class="object-position-default">
+                        <div class="pos-default">Posición predeterminada</div>
+                      </div>
+                      <div class="object-position-center">
+                        <div class="pos-center">Posición centro</div>
+                      </div>
+                    </div>
+                  </div>
+                  <p class="description">Especifica la alineación de un elemento reemplazado dentro de su contenedor.</p>
+                </div>
+              </div>
+</body>
+</html>

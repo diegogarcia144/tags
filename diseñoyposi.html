@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etiquetas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Diseño y posicionamiento</h1>
+
+        <div class="cards-container">
+            
+            <!-- Tarjeta: visibility -->
+            <div class="card">
+                <div class="card-title">.element { visibility: visible; }</div>
+                <div class="card-content">
+                    <p>El elemento <span class="visibility-visible" style="border: 1px solid gray; padding: 3px;">con visibility: visible</span> se muestra normalmente. A diferencia de display: none, visibility: hidden ocupa espacio pero no se ve.</p>
+                </div>
+            </div>
+
+            <!-- Tarjeta: position static -->
+            <div class="card">
+                <div class="card-title">.element { position: static; }</div>
+                <div class="card-content">
+                    <p>Un elemento con <span class="position-static" style="border: 1px solid gray; padding: 3px;">position: static</span> sigue el flujo normal del documento. Las propiedades top, right, bottom y left no tienen efecto.</p>
+                </div>
+            </div>
+
+            <!-- Tarjeta: top -->
+            <div class="card">
+                <div class="card-title">.element { top: 0; }</div>
+                <div class="card-content">
+                    <div style="position: relative; height: 80px; border: 1px dashed gray;">
+                        <div class="position-top" style="position: absolute; top: 0; background-color: #e0e0e0; padding: 5px;">
+                            Este elemento tiene position: absolute y top: 0, lo que lo coloca en la parte superior de su contenedor.
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+                    <!-- Tarjeta: right -->
+            <div class="card">
+                <div class="card-title">.element { right: 0; }</div>
+                <div class="card-content">
+                    <div style="position: relative; height: 100px; border: 1px dashed gray;">
+                        <div class="position-right" style="position: absolute; right: 0; background-color: #e0e0e0; padding: 5px; max-width: 50%;">
+                            Este elemento está alineado al borde derecho.
+                        </div>
+                    </div>
+                    <p style="margin-top: 10px; font-size: 0.9em;">Coloca el elemento en el borde derecho de su contenedor posicionado.</p>
+                </div>
+            </div>
+
+            <!-- Tarjeta: bottom -->
+            <div class="card">
+                <div class="card-title">.element { bottom: 0; }</div>
+                <div class="card-content">
+                    <div style="position: relative; height: 100px; border: 1px dashed gray;">
+                        <div class="position-bottom" style="position: absolute; bottom: 0; background-color: #e0e0e0; padding: 5px; width: 100%;">
+                            Alineado al borde inferior
+                        </div>
+                    </div>
+                    <p style="margin-top: 10px; font-size: 0.9em;">Coloca el elemento en el borde inferior de su contenedor posicionado.</p>
+                </div>
+            </div>
+
+            <!-- Tarjeta: left -->
+            <div class="card">
+                <div class="card-title">.element { left: 0; }</div>
+                <div class="card-content">
+                    <div style="position: relative; height: 100px; border: 1px dashed gray;">
+                        <div class="position-left" style="position: absolute; left: 0; background-color: #e0e0e0; padding: 5px; max-width: 50%;">
+                            Este elemento está alineado al borde izquierdo.
+                        </div>
+                    </div>
+                    <p style="margin-top: 10px; font-size: 0.9em;">Coloca el elemento en el borde izquierdo de su contenedor posicionado.</p>
+                </div>
+            </div>
+
+            <!-- Tarjeta: float -->
+            <div class="card">
+                <div class="card-title">.element { float: left; }</div>
+                <div class="card-content">
+                    <div style="overflow: auto;">
+                        <div class="float-left" style="float: left; width: 100px; height: 50px; background-color: #e0e0e0; margin-right: 10px; text-align: center; padding-top: 10px;">
+                            Float: left
+                        </div>
+                        <p>Este texto fluye alrededor del elemento que tiene float: left. El elemento flotante se coloca en el borde izquierdo de su contenedor.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tarjeta: clear -->
+            <div class="card">
+                <div class="card-title">.element { clear: left; }</div>
+                <div class="card-content">
+                    <div style="overflow: auto;">
+                        <div style="float: left; width: 100px; height: 50px; background-color: #e0e0e0; margin-right: 10px; text-align: center; padding-top: 10px;">
+                            Float: left
+                        </div>
+                        <div class="clear-left" style="clear: left; border: 1px solid gray; padding: 5px;">
+                            Este elemento tiene clear: left, lo que hace que se posicione debajo de cualquier elemento flotante a la izquierda.
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tarjeta: display none -->
+            <div class="card">
+                <div class="card-title">.element { display: none; }</div>
+                <div class="card-content">
+                    <p>El elemento con display: none no se muestra y no ocupa espacio en el layout.</p>
+                    <p>Ejemplo: este botón alterna un elemento entre visible y oculto:</p>
+                    <button onclick="toggleVisibility()" style="padding: 5px 10px; background-color: #f0f0f0; border: 1px solid #ccc; border-radius: 4px;">Toggle Visibility</button>
+                    <div id="toggleElement" style="margin-top: 10px; padding: 10px; background-color: #e0e0e0;">
+                        Este elemento puede ocultarse con display: none
+                    </div>
+                    <script>
+                        function toggleVisibility() {
+                            var element = document.getElementById("toggleElement");
+                            if (element.style.display === "none") {
+                                element.style.display = "block";
+                            } else {
+                                element.style.display = "none";
+                            }
+                        }
+                    </script>
+                </div>
+            </div>
+
+            <!-- Tarjeta: posición en las 4 direcciones -->
+            <div class="card">
+                <div class="card-title">.element { top: 0; right: 0; bottom: 0; left: 0; }</div>
+                <div class="card-content">
+                    <div style="position: relative; height: 100px; border: 1px dashed gray;">
+                        <div class="position-all" style="position: absolute; top: 0; right: 0; bottom: 0; left: 0; background-color: rgba(200, 200, 200, 0.5); display: flex; align-items: center; justify-content: center;">
+                            Este elemento ocupa todo el espacio del contenedor
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tarjeta: posición horizontal -->
+            <div class="card">
+                <div class="card-title">.element { right: 0; left: 0; }</div>
+                <div class="card-content">
+                    <div style="position: relative; height: 100px; border: 1px dashed gray;">
+                        <div class="position-horizontal" style="position: absolute; right: 0; left: 0; top: 30px; height: 40px; background-color: rgba(200, 200, 200, 0.5); display: flex; align-items: center; justify-content: center;">
+                            Este elemento ocupa todo el ancho del contenedor
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tarjeta: posición vertical -->
+            <div class="card">
+                <div class="card-title">.element { top: 0; bottom: 0; }</div>
+                <div class="card-content">
+                    <div style="position: relative; height: 100px; border: 1px dashed gray;">
+                        <div class="position-vertical" style="position: absolute; top: 0; bottom: 0; left: 30px; width: 40px; background-color: rgba(200, 200, 200, 0.5); display: flex; align-items: center; justify-content: center; writing-mode: vertical-rl;">
+                            Ocupa toda la altura
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tarjeta: right y left automáticos -->
+            <div class="card">
+                <div class="card-title">.element { right: auto; left: auto; }</div>
+                <div class="card-content">
+                    <div style="position: relative; height: 100px; border: 1px dashed gray;">
+                        <div class="position-horizontal-auto" style="position: absolute; right: auto; left: auto; width: 150px; top: 30px; background-color: rgba(200, 200, 200, 0.5); padding: 10px; text-align: center;">
+                            Con right: auto; left: auto;
+                        </div>
+                    </div>
+                    <p style="margin-top: 10px; font-size: 0.9em;">Los valores auto en right y left permiten que el elemento mantenga su posición natural en el flujo horizontal.</p>
+                </div>
+            </div>
+
+            <!-- Tarjeta: top y bottom automáticos -->
+            <div class="card">
+                <div class="card-title">.element { top: auto; bottom: auto; }</div>
+                <div class="card-content">
+                    <div style="position: relative; height: 100px; border: 1px dashed gray;">
+                        <div class="position-vertical-auto" style="position: absolute; top: auto; bottom: auto; height: 40px; left: 20px; background-color: rgba(200, 200, 200, 0.5); padding: 10px; display: flex; align-items: center;">
+                            Con top: auto; bottom: auto;
+                        </div>
+                    </div>
+                    <p style="margin-top: 10px; font-size: 0.9em;">Los valores auto en top y bottom permiten que el elemento mantenga su posición natural en el flujo vertical.</p>
+                </div>
+            </div>
+
+            <!-- Tarjeta: place-self -->
+            <div class="card">
+                <div class="card-title">.element { place-self: center; }</div>
+                <div class="card-content">
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px; height: 100px; border: 1px dashed gray;">
+                        <div style="background-color: #e0e0e0; padding: 5px;">Elemento normal</div>
+                        <div class="place-self-center" style="place-self: center; background-color: #e0e0e0; padding: 5px;">
+                            Centrado con place-self: center
+                        </div>
+                    </div>
+                    <p style="margin-top: 10px; font-size: 0.9em;">La propiedad place-self es un atajo que combina align-self y justify-self en layouts grid o flex.</p>
+                </div>
+            </div>
+
+            <!-- Tarjeta: touch-action -->
+            <div class="card">
+                <div class="card-title">.element { touch-action: none; }</div>
+                <div class="card-content">
+                    <div class="touch-action-none" style="touch-action: none; overflow: auto; height: 80px; padding: 10px; background-color: #f0f0f0; border: 1px solid #e0e0e0;">
+                        Este elemento tiene touch-action: none, lo que desactiva todas las acciones táctiles del navegador como zoom o desplazamiento en dispositivos táctiles.
+                    </div>
+                    <p style="margin-top: 10px; font-size: 0.9em;">Útil cuando se implementan gestos personalizados con JavaScript.</p>
+                </div>
+            </div>
+
+            <!-- Tarjeta: scroll-snap-type -->
+            <div class="card">
+                <div class="card-title">.element { scroll-snap-type: mandatory; }</div>
+                <div class="card-content">
+                    <div style="overflow-x: auto; scroll-snap-type: x mandatory; display: flex; width: 100%; border: 1px solid #e0e0e0;">
+                        <div style="min-width: 80%; flex-shrink: 0; scroll-snap-align: start; padding: 10px; background-color: #f5f5f5;">
+                            Panel 1 - Desliza horizontalmente para ver más paneles. El scroll se ajustará automáticamente al siguiente panel.
+                        </div>
+                        <div style="min-width: 80%; flex-shrink: 0; scroll-snap-align: start; padding: 10px; background-color: #e0e0e0;">
+                            Panel 2 - La propiedad scroll-snap-type hace que el desplazamiento se "ajuste" a estos puntos.
+                        </div>
+                    </div>
+                    <p style="margin-top: 10px; font-size: 0.9em;">La propiedad scroll-snap-type crea puntos de ajuste para el desplazamiento.</p>
+                </div>
+            </div>
+
+            <!-- Tarjeta: scroll-snap-align -->
+            <div class="card">
+                <div class="card-title">.element { scroll-snap-align: start; }</div>
+                <div class="card-content">
+                    <div style="overflow-x: auto; scroll-snap-type: x mandatory; display: flex; width: 100%; border: 1px solid #e0e0e0;">
+                        <div class="scroll-snap-align-start" style="min-width: 70%; flex-shrink: 0; scroll-snap-align: start; padding: 10px; background-color: #f5f5f5;">
+                            Este elemento tiene scroll-snap-align: start, lo que significa que se alineará con el inicio del contenedor al desplazarse.
+                        </div>
+                        <div style="min-width: 70%; flex-shrink: 0; scroll-snap-align: center; padding: 10px; background-color: #e0e0e0;">
+                            Este otro tiene scroll-snap-align: center, lo que lo alinea con el centro.
+                        </div>
+                    </div>
+                    <p style="margin-top: 10px; font-size: 0.9em;">Se utiliza junto con scroll-snap-type en el contenedor.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Flex</h1>
+        <div class="cards-container">
+            <!-- Tarjeta: display: flex -->
+            <div class="card">
+                <div class="card-title">.element { display: flex; }</div>
+                <div class="card-content">
+                    <div class="display-flex">
+                        <div class="display-flex-item">Item 1</div>
+                        <div class="display-flex-item">Item 2</div>
+                        <div class="display-flex-item">Item 3</div>
+                    </div>
+                    <p>Esta propiedad convierte un elemento en un contenedor flex, haciendo que todos sus hijos se distribuyan en una fila (por defecto).</p>
+                </div>
+            </div>
+            
+            <!-- Tarjeta: flex-direction: column -->
+            <div class="card">
+                <div class="card-title">.element { flex-direction: column; }</div>
+                <div class="card-content">
+                    <div class="flex-direction-column">
+                        <div class="flex-direction-column-item">Item 1</div>
+                        <div class="flex-direction-column-item">Item 2</div>
+                        <div class="flex-direction-column-item">Item 3</div>
+                    </div>
+                    <p>Esta propiedad cambia la dirección de los elementos flex de horizontal a vertical, apilándolos en columna.</p>
+                </div>
+            </div>
+            
+            <!-- Tarjeta: flex-wrap: wrap -->
+            <div class="card">
+                <div class="card-title">.element { flex-wrap: wrap; }</div>
+                <div class="card-content">
+                    <div class="flex-wrap">
+                        <div class="flex-wrap-item">Item 1</div>
+                        <div class="flex-wrap-item">Item 2</div>
+                        <div class="flex-wrap-item">Item 3</div>
+                        <div class="flex-wrap-item">Item 4</div>
+                        <div class="flex-wrap-item">Item 5</div>
+                    </div>
+                    <p>Esta propiedad permite que los elementos flex se distribuyan en varias líneas cuando no caben en una sola línea.</p>
+                </div>
+            </div>
+            
+            <!-- Tarjeta: justify-content: space-between -->
+            <div class="card">
+                <div class="card-title">.element { justify-content: space-between; }</div>
+                <div class="card-content">
+                    <div class="justify-content">
+                        <div class="justify-content-item">Item 1</div>
+                        <div class="justify-content-item">Item 2</div>
+                        <div class="justify-content-item">Item 3</div>
+                    </div>
+                    <p>Esta propiedad distribuye los elementos a lo largo del eje principal con espacio máximo entre ellos.</p>
+                </div>
+            </div>
+            
+            <!-- Tarjeta: align-items: center -->
+            <div class="card">
+                <div class="card-title">.element { align-items: center; }</div>
+                <div class="card-content">
+                    <div class="align-items">
+                        <div class="align-items-item">Item 1</div>
+                        <div class="align-items-item tall">Item 2<br>Alto</div>
+                        <div class="align-items-item">Item 3</div>
+                    </div>
+                    <p>Esta propiedad alinea los elementos en el centro del eje transversal del contenedor.</p>
+                </div>
+            </div>
+            
+            <!-- Tarjeta: align-self: center -->
+            <div class="card">
+                <div class="card-title">.element { align-self: center; }</div>
+                <div class="card-content">
+                    <div class="align-self">
+                        <div class="align-self-item">Item 1</div>
+                        <div class="align-self-item align-self-center">Item 2 (align-self: center)</div>
+                        <div class="align-self-item">Item 3</div>
+                    </div>
+                    <p>Esta propiedad permite a un elemento flex individual tener una alineación diferente a los demás en el eje transversal.</p>
+                </div>
+            </div>
+            
+            <!-- Tarjeta: order: 1 -->
+            <div class="card">
+                <div class="card-title">.element { order: 1; }</div>
+                <div class="card-content">
+                    <div class="order">
+                        <div class="order-item order-1">Item 1 (order: 1)</div>
+                        <div class="order-item">Item 2</div>
+                        <div class="order-item">Item 3</div>
+                    </div>
+                    <p>Esta propiedad cambia el orden de aparición de un elemento flex específico. El Item 1 aparece último a pesar de estar primero en el código.</p>
+                </div>
+            </div>
+            
+            <!-- Tarjeta: align-content: center -->
+            <div class="card">
+                <div class="card-title">.element { align-content: center; }</div>
+                <div class="card-content">
+                    <div class="align-content">
+                        <div class="align-content-item">Item 1</div>
+                        <div class="align-content-item">Item 2</div>
+                        <div class="align-content-item">Item 3</div>
+                        <div class="align-content-item">Item 4</div>
+                        <div class="align-content-item">Item 5</div>
+                    </div>
+                    <p>Esta propiedad determina cómo se distribuyen las líneas de elementos flex cuando hay espacio extra en el eje transversal, centrándolas en este caso.</p>
+                </div>
+            </div>
+            
+            <!-- Tarjeta: flex-shrink: 0 -->
+            <div class="card">
+                <div class="card-title">.element { flex-shrink: 0; }</div>
+                <div class="card-content">
+                    <div class="flex-shrink">
+                        <div class="flex-shrink-item flex-shrink-0">No se encoge</div>
+                        <div class="flex-shrink-item">Normal</div>
+                        <div class="flex-shrink-item">Normal</div>
+                    </div>
+                    <p>Esta propiedad evita que un elemento flex se encoja cuando no hay suficiente espacio. El primer elemento mantiene su tamaño mientras los otros se encogen.</p>
+                </div>
+            </div>
+            
+            <!-- Tarjeta: flex-grow: 1 -->
+            <div class="card">
+                <div class="card-title">.element { flex-grow: 1; }</div>
+                <div class="card-content">
+                    <div class="flex-grow">
+                        <div class="flex-grow-item">Fix</div>
+                        <div class="flex-grow-item flex-grow-1">Crece</div>
+                        <div class="flex-grow-item">Fix</div>
+                    </div>
+                    <p>Esta propiedad hace que un elemento flex se expanda para ocupar el espacio disponible. El elemento central crece para llenar el espacio extra.</p>
+                </div>
+            </div>
+            
+            <!-- Tarjeta: flex-basis: 25% -->
+            <div class="card">
+                <div class="card-title">.element { flex-basis: 25%; }</div>
+                <div class="card-content">
+                    <div class="flex-basis">
+                        <div class="flex-basis-item">Auto</div>
+                        <div class="flex-basis-item flex-basis-25">25%</div>
+                        <div class="flex-basis-item">Auto</div>
+                    </div>
+                    <p>Esta propiedad establece el tamaño inicial de un elemento flex. El elemento central tiene un tamaño base del 25% del contenedor.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

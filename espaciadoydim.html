@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Etiquetas</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Espaciado y dimensiones</h1>
+
+        <div class="cards-container">
+            <!-- Tarjeta: margin -->
+            <div class="card">
+                <div class="card-title">.element { margin: 16px; }</div>
+                <div class="card-content">
+                    <div class="container-outline">
+                        <div class="margin-all">Este elemento tiene un margen de 16px en todos los lados</div>
+                    </div>
+                    <p>Esta propiedad establece el espacio entre los bordes del elemento y los elementos adyacentes.</p>
+                </div>
+            </div>
+
+            <!-- Tarjeta: margin-top -->
+            <div class="card">
+                <div class="card-title">.element { margin-top: 32px; }</div>
+                <div class="card-content">
+                    <div class="container-outline">
+                        <div class="margin-top">Este elemento tiene un margen superior de 32px</div>
+                    </div>
+                    <p>Esta propiedad establece el espacio entre el borde superior del elemento y el elemento adyacente arriba.</p>
+                </div>
+            </div>
+
+            <!-- Tarjeta: margin-right -->
+            <div class="card">
+                <div class="card-title">.element { margin-right: 48px; }</div>
+                <div class="card-content">
+                    <div class="container-outline">
+                        <div class="margin-right">Este elemento tiene un margen derecho de 48px</div>
+                    </div>
+                    <p>Esta propiedad establece el espacio entre el borde derecho del elemento y el elemento adyacente a la derecha.</p>
+                </div>
+            </div>
+
+            <!-- Tarjeta: margin-bottom -->
+            <div class="card">
+                <div class="card-title">.element { margin-bottom: 64px; }</div>
+                <div class="card-content">
+                    <div class="container-outline" style="height: 150px;">
+                        <div class="margin-bottom">Este elemento tiene un margen inferior de 64px</div>
+                    </div>
+                    <p>Esta propiedad establece el espacio entre el borde inferior del elemento y el elemento adyacente abajo.</p>
+                </div>
+            </div>
+
+            <!-- Tarjeta: margin-left -->
+            <div class="card">
+                <div class="card-title">.element { margin-left: 80px; }</div>
+                <div class="card-content">
+                    <div class="container-outline">
+                        <div class="margin-left">Este elemento tiene un margen izquierdo de 80px</div>
+                    </div>
+                    <p>Esta propiedad establece el espacio entre el borde izquierdo del elemento y el elemento adyacente a la izquierda.</p>
+                </div>
+            </div>
+
+            <!-- Tarjeta: padding -->
+            <div class="card">
+                <div class="card-title">.element { padding: 24px; }</div>
+                <div class="card-content">
+                    <div class="padding-all">Este elemento tiene un relleno de 24px en todos los lados</div>
+                    <p>Esta propiedad establece el espacio entre el contenido del elemento y su borde.</p>
+                </div>
+            </div>
+
+            <!-- Tarjeta: padding-top -->
+            <div class="card">
+                <div class="card-title">.element { padding-top: 40px; }</div>
+                <div class="card-content">
+                    <div class="padding-top">Este elemento tiene un relleno superior de 40px</div>
+                    <p>Esta propiedad establece el espacio entre el contenido del elemento y su borde superior.</p>
+                </div>
+            </div>
+
+            <!-- Tarjeta: padding-right -->
+            <div class="card">
+                <div class="card-title">.element { padding-right: 32px; }</div>
+                <div class="card-content">
+                    <div class="padding-right">Este elemento tiene un relleno derecho de 32px</div>
+                    <p>Esta propiedad establece el espacio entre el contenido del elemento y su borde derecho.</p>
+                </div>
+            </div>
+
+            <!-- Tarjeta: padding-bottom -->
+            <div class="card">
+                <div class="card-title">.element { padding-bottom: 48px; }</div>
+                <div class="card-content">
+                    <div class="padding-bottom">Este elemento tiene un relleno inferior de 48px</div>
+                    <p>Esta propiedad establece el espacio entre el contenido del elemento y su borde inferior.</p>
+                </div>
+            </div>
+
+            <!-- Tarjeta: padding-left -->
+            <div class="card">
+                <div class="card-title">.element { padding-left: 64px; }</div>
+                <div class="card-content">
+                    <div class="padding-left">Este elemento tiene un relleno izquierdo de 64px</div>
+                    <p>Esta propiedad establece el espacio entre el contenido del elemento y su borde izquierdo.</p>
+                </div>
+            </div>
+
+            <!-- Tarjeta: width -->
+            <div class="card">
+                <div class="card-title">.element { width: 50%; }</div>
+                <div class="card-content">
+                    <div class="container-demo">
+                        <div class="width-50">Este elemento ocupa el 50% del ancho de su contenedor</div>
+                    </div>
+                    <p>Esta propiedad establece el ancho del elemento. Cuando se usa con porcentaje, se calcula respecto al contenedor.</p>
+                </div>
+            </div>
+
+            <!-- Tarjeta: max-width -->
+            <div class="card">
+                <div class="card-title">.element { max-width: 48rem; }</div>
+                <div class="card-content">
+                    <div class="container-demo">
+                        <div class="max-width">Este elemento tiene un ancho máximo de 48rem (aproximadamente 768px)</div>
+                    </div>
+                    <p>Esta propiedad limita el ancho máximo que puede tener un elemento, incluso si su contenedor es más grande.</p>
+                </div>
+            </div>
+
+            <!-- Tarjeta: height -->
+            <div class="card">
+                <div class="card-title">.element { height: 256px; }</div>
+                <div class="card-content">
+                    <div class="height-256">Este elemento tiene una altura fija de 256px</div>
+                    <p>Esta propiedad establece la altura del elemento de forma explícita.</p>
+                </div>
+            </div>
+
+            <!-- Tarjeta: min-height -->
+            <div class="card">
+                <div class="card-title">.element { min-height: 100vh; }</div>
+                <div class="card-content">
+                    <div class="min-height-demo">Este elemento tiene una altura mínima. En el caso de 100vh, ocuparía como mínimo toda la altura de la ventana del navegador.</div>
+                    <p>Esta propiedad establece la altura mínima que debe tener un elemento, creciendo si el contenido lo requiere.</p>
+                </div>
+            </div>
+
+            <!-- Tarjeta: max-height -->
+            <div class="card">
+                <div class="card-title">.element { max-height: 24rem; }</div>
+                <div class="card-content">
+                    <div class="max-height-demo">
+                        <p>Este elemento tiene una altura máxima de 24rem.</p>
+                        <p>Si el contenido excede esta altura, se activará un scrollbar.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        <p>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+                        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum.</p>
+                        <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia.</p>
+                    </div>
+                    <p>Esta propiedad limita la altura máxima que puede tener un elemento, con scroll si el contenido excede.</p>
+                </div>
+            </div>
+
+            <!-- Tarjeta: scroll-padding -->
+            <div class="card">
+                <div class="card-title">.element { scroll-padding: 1rem; }</div>
+                <div class="card-content">
+                    <p>La propiedad scroll-padding establece el margen interno en todas las direcciones cuando un elemento es desplazado a un punto de anclaje con scroll.</p>
+                    <div class="scroll-container scroll-padding-all">
+                        <div class="scroll-content">
+                            <div class="anchor-point" id="anchor1">Punto de anclaje con scroll-padding</div>
+                        </div>
+                    </div>
+                    <button onclick="document.getElementById('anchor1').scrollIntoView({behavior: 'smooth'})">Hacer scroll al punto de anclaje</button>
+                </div>
+            </div>
+
+            <!-- Tarjeta: scroll-margin -->
+            <div class="card">
+                <div class="card-title">.element { scroll-margin: 1rem; }</div>
+                <div class="card-content">
+                    <p>La propiedad scroll-margin establece el margen externo en todas las direcciones cuando un elemento es desplazado a un punto de anclaje con scroll.</p>
+                    <div class="scroll-container">
+                        <div class="scroll-content">
+                            <div class="anchor-point scroll-margin-all" id="anchor2">Punto de anclaje con scroll-margin</div>
+                        </div>
+                    </div>
+                    <button onclick="document.getElementById('anchor2').scrollIntoView({behavior: 'smooth'})">Hacer scroll al punto de anclaje</button>
+                </div>
+            </div>
+
+            <!-- Tarjeta: scroll-margin-top -->
+            <div class="card">
+                <div class="card-title">.element { scroll-margin-top: 1rem; }</div>
+                <div class="card-content">
+                    <p>La propiedad scroll-margin-top establece el margen superior cuando un elemento es desplazado a un punto de anclaje con scroll.</p>
+                    <div class="scroll-container">
+                        <div class="scroll-content">
+                            <div class="anchor-point scroll-margin-top" id="anchor3">Punto de anclaje con scroll-margin-top</div>
+                        </div>
+                    </div>
+                    <button onclick="document.getElementById('anchor3').scrollIntoView({behavior: 'smooth'})">Hacer scroll al punto de anclaje</button>
+                </div>
+            </div>
+
+            <!-- Tarjeta: scroll-margin-right -->
+            <div class="card">
+                <div class="card-title">.element { scroll-margin-right: 1rem; }</div>
+                <div class="card-content">
+                    <p>La propiedad scroll-margin-right establece el margen derecho cuando un elemento es desplazado a un punto de anclaje con scroll.</p>
+                    <div class="scroll-container">
+                        <div class="scroll-content">
+                            <div class="anchor-point scroll-margin-right" id="anchor4">Punto de anclaje con scroll-margin-right</div>
+                        </div>
+                    </div>
+                    <button onclick="document.getElementById('anchor4').scrollIntoView({behavior: 'smooth'})">Hacer scroll al punto de anclaje</button>
+                </div>
+            </div>
+
+            <!-- Tarjeta: scroll-margin-bottom -->
+            <div class="card">
+                <div class="card-title">.element { scroll-margin-bottom: 1rem; }</div>
+                <div class="card-content">
+                    <p>La propiedad scroll-margin-bottom establece el margen inferior cuando un elemento es desplazado a un punto de anclaje con scroll.</p>
+                    <div class="scroll-container">
+                        <div class="scroll-content">
+                            <div class="anchor-point scroll-margin-bottom" id="anchor5">Punto de anclaje con scroll-margin-bottom</div>
+                        </div>
+                    </div>
+                    <button onclick="document.getElementById('anchor5').scrollIntoView({behavior: 'smooth'})">Hacer scroll al punto de anclaje</button>
+                </div>
+            </div>
+
+            <!-- Tarjeta: scroll-margin-left -->
+            <div class="card">
+                <div class="card-title">.element { scroll-margin-left: 1rem; }</div>
+                <div class="card-content">
+                    <p>La propiedad scroll-margin-left establece el margen izquierdo cuando un elemento es desplazado a un punto de anclaje con scroll.</p>
+                    <div class="scroll-container">
+                        <div class="scroll-content">
+                            <div class="anchor-point scroll-margin-left" id="anchor6">Punto de anclaje con scroll-margin-left</div>
+                        </div>
+                    </div>
+                    <button onclick="document.getElementById('anchor6').scrollIntoView({behavior: 'smooth'})">Hacer scroll al punto de anclaje</button>
+                </div>
+            </div>
+
+            <!-- Tarjeta: scroll-padding-top -->
+            <div class="card">
+                <div class="card-title">.element { scroll-padding-top: 1rem; }</div>
+                <div class="card-content">
+                    <p>La propiedad scroll-padding-top establece el margen interno superior cuando un elemento es desplazado a un punto de anclaje con scroll.</p>
+                    <div class="scroll-container scroll-padding-top">
+                        <div class="scroll-content">
+                            <div class="anchor-point" id="anchor7">Punto de anclaje con scroll-padding-top</div>
+                        </div>
+                    </div>
+                    <button onclick="document.getElementById('anchor7').scrollIntoView({behavior: 'smooth'})">Hacer scroll al punto de anclaje</button>
+                </div>
+            </div>
+
+            <!-- Tarjeta: scroll-padding-right -->
+            <div class="card">
+                <div class="card-title">.element { scroll-padding-right: 1rem; }</div>
+                <div class="card-content">
+                    <p>La propiedad scroll-padding-right establece el margen interno derecho cuando un elemento es desplazado a un punto de anclaje con scroll.</p>
+                    <div class="scroll-container scroll-padding-right">
+                        <div class="scroll-content">
+                            <div class="anchor-point" id="anchor8">Punto de anclaje con scroll-padding-right</div>
+                        </div>
+                    </div>
+                    <button onclick="document.getElementById('anchor8').scrollIntoView({behavior: 'smooth'})">Hacer scroll al punto de anclaje</button>
+                </div>
+            </div>
+
+            <!-- Tarjeta: scroll-padding-bottom -->
+            <div class="card">
+                <div class="card-title">.element { scroll-padding-bottom: 1rem; }</div>
+                <div class="card-content">
+                    <p>La propiedad scroll-padding-bottom establece el margen interno inferior cuando un elemento es desplazado a un punto de anclaje con scroll.</p>
+                    <div class="scroll-container scroll-padding-bottom">
+                        <div class="scroll-content">
+                            <div class="anchor-point" id="anchor9">Punto de anclaje con scroll-padding-bottom</div>
+                        </div>
+                    </div>
+                    <button onclick="document.getElementById('anchor9').scrollIntoView({behavior: 'smooth'})">Hacer scroll al punto de anclaje</button>
+                </div>
+            </div>
+
+            <!-- Tarjeta: scroll-padding-left -->
+            <div class="card">
+                <div class="card-title">.element { scroll-padding-left: 1rem; }</div>
+                <div class="card-content">
+                    <p>La propiedad scroll-padding-left establece el margen interno izquierdo cuando un elemento es desplazado a un punto de anclaje con scroll.</p>
+                    <div class="scroll-container scroll-padding-left">
+                        <div class="scroll-content">
+                            <div class="anchor-point" id="anchor10">Punto de anclaje con scroll-padding-left</div>
+                        </div>
+                    </div>
+                    <button onclick="document.getElementById('anchor10').scrollIntoView({behavior: 'smooth'})">Hacer scroll al punto de anclaje</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

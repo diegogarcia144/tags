@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etiquetas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Animaciones</h1>
+
+        <div class="cards-container">
+            <!-- Tarjeta: transition (ancho) -->
+            <div class="card">
+                <div class="card-title">.element { transition: width 2s; }</div>
+                <div class="card-content">
+                <div class="demo-box transition-width">Hover</div>
+                <div class="demo-text">Pasa el cursor por encima para ver cómo el ancho cambia gradualmente durante 2 segundos.</div>
+                </div>
+            </div>
+            
+            <!-- Tarjeta: transition-property -->
+            <div class="card">
+                <div class="card-title">.element { transition-property: background-color; }</div>
+                <div class="card-content">
+                <div class="demo-box transition-property">Hover</div>
+                <div class="demo-text">Pasa el cursor para ver cómo solo la propiedad de color de fondo realiza la transición.</div>
+                </div>
+            </div>
+            
+            <!-- Tarjeta: transition-duration -->
+            <div class="card">
+                <div class="card-title">.element { transition-duration: 0.5s; }</div>
+                <div class="card-content">
+                <div class="demo-box transition-duration">Hover</div>
+                <div class="demo-text">La transición dura exactamente 0.5 segundos al pasar el cursor.</div>
+                </div>
+            </div>
+            
+            <!-- Tarjeta: transition-timing-function -->
+            <div class="card">
+                <div class="card-title">.element { transition-timing-function: ease-in; }</div>
+                <div class="card-content">
+                <div class="demo-box transition-timing">Hover</div>
+                <div class="demo-text">La transición comienza lenta y acelera con el efecto ease-in.</div>
+                </div>
+            </div>
+            
+            <!-- Tarjeta: transition-delay -->
+            <div class="card">
+                <div class="card-title">.element { transition-delay: 0.2s; }</div>
+                <div class="card-content">
+                <div class="demo-box transition-delay">Hover</div>
+                <div class="demo-text">Hay un retraso de 0.2 segundos antes de que comience la transición.</div>
+                </div>
+            </div>
+            
+            <!-- Tarjeta: animation básica -->
+            <div class="card">
+                <div class="card-title">.element { animation: spin 2s linear infinite; }</div>
+                <div class="card-content">
+                <div class="demo-box animation-basic">Girando</div>
+                <div class="demo-text">Animación continua de rotación que se repite infinitamente.</div>
+                </div>
+            </div>
+            
+            <!-- Tarjeta: keyframes spin -->
+            <div class="card">
+                <div class="card-title">@keyframes spin { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }</div>
+                <div class="card-content">
+                <div class="demo-box animation-basic">Girando</div>
+                <div class="demo-text">Definición de fotogramas clave para la animación de rotación completa.</div>
+                </div>
+            </div>
+            
+            <!-- Tarjeta: animation-duration -->
+            <div class="card">
+                <div class="card-title">.element { animation-duration: 0.3s; }</div>
+                <div class="card-content">
+                <div class="demo-box animation-duration">Rápido</div>
+                <div class="demo-text">La animación completa dura solo 0.3 segundos, lo que la hace muy rápida.</div>
+                </div>
+            </div>
+            
+            <!-- Tarjeta: animation-delay -->
+            <div class="card">
+                <div class="card-title">.element { animation-delay: 0.5s; }</div>
+                <div class="card-content">
+                <div class="demo-box animation-delay">Retrasado</div>
+                <div class="demo-text">La animación comienza después de un retraso de 0.5 segundos.</div>
+                <button class="play-button" onclick="this.previousElementSibling.previousElementSibling.style.animationName = 'none'; setTimeout(() => this.previousElementSibling.previousElementSibling.style.animationName = 'spin', 10);">Reiniciar</button>
+                </div>
+            </div>
+            
+            <!-- Tarjeta: animation-iteration-count -->
+            <div class="card">
+                <div class="card-title">.element { animation-iteration-count: infinite; }</div>
+                <div class="card-content">
+                <div class="demo-box animation-iteration">∞</div>
+                <div class="demo-text">La animación se repite indefinidamente sin detenerse.</div>
+                </div>
+            </div>
+            
+            <!-- Tarjeta: animation-direction -->
+            <div class="card">
+                <div class="card-title">.element { animation-direction: alternate; }</div>
+                <div class="card-content">
+                <div class="demo-box animation-direction-alternate">↔️</div>
+                <div class="demo-text">La animación alterna entre adelante y atrás en cada ciclo.</div>
+                </div>
+            </div>
+            
+            <!-- Tarjeta: animation-fill-mode -->
+            <div class="card">
+                <div class="card-title">.element { animation-fill-mode: forwards; }</div>
+                <div class="card-content">
+                <div class="demo-box animation-fill-forwards">Final</div>
+                <div class="demo-text">La animación mantiene el estado final al completarse.</div>
+                <button class="play-button" onclick="this.previousElementSibling.previousElementSibling.style.animationName = 'none'; setTimeout(() => this.previousElementSibling.previousElementSibling.style.animationName = 'spin', 10);">Reiniciar</button>
+                </div>
+            </div>
+            
+            <!-- Tarjeta: animation-play-state -->
+            <div class="card">
+                <div class="card-title">.element { animation-play-state: paused; }</div>
+                <div class="card-content">
+                <div class="demo-box animation-play-paused">Hover</div>
+                <div class="demo-text">La animación está pausada por defecto. Pasa el cursor por encima para reanudarla.</div>
+                </div>
+            </div>
+            
+            <!-- Tarjeta: keyframes bounce -->
+            <div class="card">
+                <div class="card-title">@keyframes bounce { 0%, 100% { transform: translateY(-25%); } 50% { transform: translateY(0%); } }</div>
+                <div class="card-content">
+                <div class="demo-box animation-bounce">Rebote</div>
+                <div class="demo-text">Efecto de rebote vertical usando transformaciones de traslación.</div>
+                </div>
+            </div>
+            
+            <!-- Tarjeta: keyframes ping -->
+            <div class="card">
+                <div class="card-title">@keyframes ping { 75%, 100% { transform: scale(2); opacity: 0; } }</div>
+                <div class="card-content">
+                <div class="demo-box animation-ping">Ping</div>
+                <div class="demo-text">Efecto de ping que escala y desvanece el elemento.</div>
+                </div>
+            </div>
+            
+            <!-- Tarjeta: keyframes scale -->
+            <div class="card">
+                <div class="card-title">@keyframes scale { 0% { transform: scale(1); } 100% { transform: scale(1.5); } }</div>
+                <div class="card-content">
+                <div class="demo-box animation-scale">Escala</div>
+                <div class="demo-text">Animación de escala que aumenta y disminuye el tamaño del elemento.</div>
+                </div>
+            </div>
+            
+            <!-- Tarjeta: animation: none -->
+            <div class="card">
+                <div class="card-title">.element { animation: none; }</div>
+                <div class="card-content">
+                <div class="demo-box animation-none">Sin animación</div>
+                <div class="demo-text">Este elemento no tiene ninguna animación aplicada.</div>
+                </div>
+            </div>
+            
+            <!-- Tarjeta: animation-direction: reverse -->
+            <div class="card">
+                <div class="card-title">.element { animation-direction: reverse; }</div>
+                <div class="card-content">
+                <div class="demo-box animation-reverse">Inversa</div>
+                <div class="demo-text">La animación de giro se ejecuta en dirección inversa (contraria a las agujas del reloj).</div>
+                </div>
+            </div>
+            
+            <!-- Tarjeta: animate-zoom -->
+            <div class="card">
+                <div class="card-title">.animate-zoom .element { animation-duration: 0.5s; }</div>
+                <div class="card-content">
+                <div class="demo-box animate-zoom">Zoom</div>
+                <div class="demo-text">Efecto de zoom que amplía el elemento desde un tamaño menor.</div>
+                <button class="play-button" onclick="this.previousElementSibling.previousElementSibling.style.animationName = 'none'; setTimeout(() => this.previousElementSibling.previousElementSibling.style.animationName = 'zoom', 10);">Repetir</button>
+                </div>
+            </div>
+            
+            <!-- Tarjeta: animate-slide -->
+            <div class="card">
+                <div class="card-title">.animate-slide .element { animation-duration: 0.5s; }</div>
+                <div class="card-content">
+                <div class="demo-box animate-slide">Deslizar</div>
+                <div class="demo-text">Efecto de deslizamiento horizontal desde la izquierda.</div>
+                <button class="play-button" onclick="this.previousElementSibling.previousElementSibling.style.animationName = 'none'; setTimeout(() => this.previousElementSibling.previousElementSibling.style.animationName = 'slide', 10);">Repetir</button>
+                </div>
+            </div>
+            
+            <!-- Tarjeta: animate-fade -->
+            <div class="card">
+                <div class="card-title">.animate-fade .element { animation-duration: 0.5s; }</div>
+                <div class="card-content">
+                <div class="demo-box animate-fade">Aparecer</div>
+                <div class="demo-text">Efecto de aparición gradual desde transparente a opaco.</div>
+                <button class="play-button" onclick="this.previousElementSibling.previousElementSibling.style.animationName = 'none'; setTimeout(() => this.previousElementSibling.previousElementSibling.style.animationName = 'fade', 10);">Repetir</button>
+                </div>
+            </div>
+            
+            <!-- Tarjeta: animate-rotate -->
+            <div class="card">
+                <div class="card-title">.animate-rotate .element { animation-duration: 0.5s; }</div>
+                <div class="card-content">
+                <div class="demo-box animate-rotate">Rotar</div>
+                <div class="demo-text">Efecto de rotación completa de 360 grados.</div>
+                <button class="play-button" onclick="this.previousElementSibling.previousElementSibling.style.animationName = 'none'; setTimeout(() => this.previousElementSibling.previousElementSibling.style.animationName = 'rotate', 10);">Repetir</button>
+                </div>
+            </div>
+            
+            <!-- Tarjeta: animate-slide-fade -->
+            <div class="card">
+                <div class="card-title">.animate-slide-fade .element { animation-duration: 0.5s; }</div>
+                <div class="card-content">
+                <div class="demo-box animate-slide-fade">Deslizar+Aparecer</div>
+                <div class="demo-text">Combinación de deslizamiento vertical y aparición gradual.</div>
+                <button class="play-button" onclick="this.previousElementSibling.previousElementSibling.style.animationName = 'none'; setTimeout(() => this.previousElementSibling.previousElementSibling.style.animationName = 'slideFade', 10);">Repetir</button>
+                </div>
+            </div>
+            
+            <!-- Tarjeta: animate-bounce-scale -->
+            <div class="card">
+                <div class="card-title">.animate-bounce-scale .element { animation-duration: 0.5s; }</div>
+                <div class="card-content">
+                <div class="demo-box animate-bounce-scale">Rebote-Escala</div>
+                <div class="demo-text">Efecto de rebote con escalado que aumenta y vuelve a su tamaño.</div>
+                <button class="play-button" onclick="this.previousElementSibling.previousElementSibling.style.animationName = 'none'; setTimeout(() => this.previousElementSibling.previousElementSibling.style.animationName = 'bounceScale', 10);">Repetir</button>
+                </div>
+            </div>
+            
+            <!-- Tarjeta: animate-flip -->
+            <div class="card">
+                <div class="card-title">.animate-flip .element { animation-duration: 0.5s; }</div>
+                <div class="card-content">
+                <div class="demo-box animate-flip">Voltear</div>
+                <div class="demo-text">Efecto de volteo en 3D sobre el eje Y.</div>
+                <button class="play-button" onclick="this.previousElementSibling.previousElementSibling.style.animationName = 'none'; setTimeout(() => this.previousElementSibling.previousElementSibling.style.animationName = 'flip', 10);">Repetir</button>
+                </div>
+            </div>
+            
+            <!-- Tarjeta: animate-pulse -->
+            <div class="card">
+                <div class="card-title">.animate-pulse .element { animation-duration: 2s; }</div>
+                <div class="card-content">
+                <div class="demo-box animate-pulse">Pulso</div>
+                <div class="demo-text">Efecto de pulso que cambia la opacidad periódicamente.</div>
+                </div>
+            </div>
+            
+            <!-- Tarjeta: animate-wiggle -->
+            <div class="card">
+                <div class="card-title">.animate-wiggle .element { animation-duration: 2s; }</div>
+                <div class="card-content">
+                <div class="demo-box animate-wiggle">Bamboleo</div>
+                <div class="demo-text">Efecto de bamboleo con rotación hacia ambos lados.</div>
+                </div>
+            </div>
+
+            <!-- Tarjeta: animate-blink -->
+        <div class="card">
+            <div class="card-title">.animate-blink .element { animation-duration: 2s; }</div>
+            <div class="card-content">
+            <div class="demo-box animate-blink">Parpadeo</div>
+            <div class="demo-text">Efecto de parpadeo que alterna entre visible e invisible.</div>
+            </div>
+        </div>
+        
+        <!-- Tarjeta: animate-slide-bounce -->
+        <div class="card">
+            <div class="card-title">.animate-slide-bounce .element { animation-duration: 0.5s; }</div>
+            <div class="card-content">
+            <div class="demo-box animate-slide-bounce">Deslizar+Rebotar</div>
+            <div class="demo-text">Deslizamiento con efecto de rebote al final.</div>
+            <button class="play-button" onclick="this.previousElementSibling.previousElementSibling.style.animationName = 'none'; setTimeout(() => this.previousElementSibling.previousElementSibling.style.animationName = 'slideBounce', 10);">Repetir</button>
+            </div>
+        </div>
+        
+        <!-- Tarjeta: animate-heartbeat -->
+        <div class="card">
+            <div class="card-title">.animate-heartbeat .element { animation-duration: 2s; }</div>
+            <div class="card-content">
+            <div class="demo-box animate-heartbeat">Latido</div>
+            <div class="demo-text">Efecto de latido que pulsa como un corazón.</div>
+            </div>
+        </div>
+        
+        <!-- Tarjeta: animate-rubberband -->
+        <div class="card">
+            <div class="card-title">.animate-rubberband .element { animation-duration: 2s; }</div>
+            <div class="card-content">
+            <div class="demo-box animate-rubberband">Elástico</div>
+            <div class="demo-text">Efecto elástico que estira y comprime el elemento.</div>
+            </div>
+        </div>
+        
+        <!-- Tarjeta: animate-head-shake -->
+        <div class="card">
+            <div class="card-title">.animate-head-shake .element { animation-duration: 2s; }</div>
+            <div class="card-content">
+            <div class="demo-box animate-head-shake">Sacudir</div>
+            <div class="demo-text">Efecto de sacudida horizontal, como negando con la cabeza.</div>
+            </div>
+        </div>
+        
+        <!-- Tarjeta: animate-jello -->
+        <div class="card">
+            <div class="card-title">.animate-jello .element { animation-duration: 2s; }</div>
+            <div class="card-content">
+            <div class="demo-box animate-jello">Gelatina</div>
+            <div class="demo-text">Efecto de gelatina con distorsión de inclinación suave.</div>
+            </div>
+        </div>
+        
+        <!-- Tarjeta: animate-tada -->
+        <div class="card">
+            <div class="card-title">.animate-tada .element { animation-duration: 2s; }</div>
+            <div class="card-content">
+            <div class="demo-box animate-tada">¡Tadá!</div>
+            <div class="demo-text">Efecto de atención con escalado y rotación sutil.</div>
+            </div>
+        </div>
+        
+        <!-- Tarjeta: animate-bounce-in-left -->
+        <div class="card">
+            <div class="card-title">.animate-bounce-in-left .element { animation-duration: 2s; }</div>
+            <div class="card-content">
+            <div class="demo-box animate-bounce-in-left">Rebote Izq.</div>
+            <div class="demo-text">Entrada con rebote desde la izquierda.</div>
+            <button class="play-button" onclick="this.previousElementSibling.previousElementSibling.style.animationName = 'none'; setTimeout(() => this.previousElementSibling.previousElementSibling.style.animationName = 'bounceInLeft', 10);">Repetir</button>
+            </div>
+        </div>
+        
+        <!-- Tarjeta: animate-bounce-in-right -->
+        <div class="card">
+            <div class="card-title">.animate-bounce-in-right .element { animation-duration: 2s; }</div>
+            <div class="card-content">
+            <div class="demo-box animate-bounce-in-right">Rebote Der.</div>
+            <div class="demo-text">Entrada con rebote desde la derecha.</div>
+            <button class="play-button" onclick="this.previousElementSibling.previousElementSibling.style.animationName = 'none'; setTimeout(() => this.previousElementSibling.previousElementSibling.style.animationName = 'bounceInRight', 10);">Repetir</button>
+            </div>
+        </div>
+        
+        <!-- Tarjeta: animate-bounce-in-up -->
+        <div class="card">
+            <div class="card-title">.animate-bounce-in-up .element { animation-duration: 2s; }</div>
+            <div class="card-content">
+            <div class="demo-box animate-bounce-in-up">Rebote Arr.</div>
+            <div class="demo-text">Entrada con rebote desde abajo.</div>
+            <button class="play-button" onclick="this.previousElementSibling.previousElementSibling.style.animationName = 'none'; setTimeout(() => this.previousElementSibling.previousElementSibling.style.animationName = 'bounceInUp', 10);">Repetir</button>
+            </div>
+        </div>
+        
+        <!-- Tarjeta: animate-bounce-in-down -->
+        <div class="card">
+            <div class="card-title">.animate-bounce-in-down .element { animation-duration: 2s; }</div>
+            <div class="card-content">
+            <div class="demo-box animate-bounce-in-down">Rebote Aba.</div>
+            <div class="demo-text">Entrada con rebote desde arriba.</div>
+            <button class="play-button" onclick="this.previousElementSibling.previousElementSibling.style.animationName = 'none'; setTimeout(() => this.previousElementSibling.previousElementSibling.style.animationName = 'bounceInDown', 10);">Repetir</button>
+            </div>
+        </div>
+        
+        <!-- Tarjeta: animate-fade-in-left -->
+        <div class="card">
+            <div class="card-title">.animate-fade-in-left .element { animation-duration: 2s; }</div>
+            <div class="card-content">
+            <div class="demo-box animate-fade-in-left">Fade Izq.</div>
+            <div class="demo-text">Aparición gradual desde la izquierda.</div>
+            <button class="play-button" onclick="this.previousElementSibling.previousElementSibling.style.animationName = 'none'; setTimeout(() => this.previousElementSibling.previousElementSibling.style.animationName = 'fadeInLeft', 10);">Repetir</button>
+            </div>
+        </div>
+        
+        <!-- Tarjeta: animate-fade-in-right -->
+        <div class="card">
+            <div class="card-title">.animate-fade-in-right .element { animation-duration: 2s; }</div>
+            <div class="card-content">
+            <div class="demo-box animate-fade-in-right">Fade Der.</div>
+            <div class="demo-text">Aparición gradual desde la derecha.</div>
+            <button class="play-button" onclick="this.previousElementSibling.previousElementSibling.style.animationName = 'none'; setTimeout(() => this.previousElementSibling.previousElementSibling.style.animationName = 'fadeInRight', 10);">Repetir</button>
+            </div>
+        </div>
+        
+        <!-- Tarjeta: animate-fade-in-up -->
+        <div class="card">
+            <div class="card-title">.animate-fade-in-up .element { animation-duration: 2s; }</div>
+            <div class="card-content">
+            <div class="demo-box animate-fade-in-up">Fade Arr.</div>
+            <div class="demo-text">Aparición gradual desde abajo.</div>
+            <button class="play-button" onclick="this.previousElementSibling.previousElementSibling.style.animationName = 'none'; setTimeout(() => this.previousElementSibling.previousElementSibling.style.animationName = 'fadeInUp', 10);">Repetir</button>
+            </div>
+        </div>
+        
+        <!-- Tarjeta: animate-fade-in-down -->
+        <div class="card">
+            <div class="card-title">.animate-fade-in-down .element { animation-duration: 2s; }</div>
+            <div class="card-content">
+            <div class="demo-box animate-fade-in-down">Fade Aba.</div>
+            <div class="demo-text">Aparición gradual desde arriba.</div>
+            <button class="play-button" onclick="this.previousElementSibling.previousElementSibling.style.animationName = 'none'; setTimeout(() => this.previousElementSibling.previousElementSibling.style.animationName = 'fadeInDown', 10);">Repetir</button>
+            </div>
+        </div>
+        
+        <!-- Tarjeta: animate-slide-in-left -->
+        <div class="card">
+            <div class="card-title">.animate-slide-in-left .element { animation-duration: 2s; }</div>
+            <div class="card-content">
+            <div class="demo-box animate-slide-in-left">Slide Izq.</div>
+            <div class="demo-text">Deslizamiento suave desde la izquierda.</div>
+            <button class="play-button" onclick="this.previousElementSibling.previousElementSibling.style.animationName = 'none'; setTimeout(() => this.previousElementSibling.previousElementSibling.style.animationName = 'slideInLeft', 10);">Repetir</button>
+            </div>
+        </div>
+        
+        <!-- Tarjeta: animate-slide-in-right -->
+        <div class="card">
+            <div class="card-title">.animate-slide-in-right .element { animation-duration: 2s; }</div>
+            <div class="card-content">
+            <div class="demo-box animate-slide-in-right">Slide Der.</div>
+            <div class="demo-text">Deslizamiento suave desde la derecha.</div>
+            <button class="play-button" onclick="this.previousElementSibling.previousElementSibling.style.animationName = 'none'; setTimeout(() => this.previousElementSibling.previousElementSibling.style.animationName = 'slideInRight', 10);">Repetir</button>
+            </div>
+        </div>
+        
+        <!-- Tarjeta: animate-slide-in-up -->
+        <div class="card">
+            <div class="card-title">.animate-slide-in-up .element { animation-duration: 2s; }</div>
+            <div class="card-content">
+            <div class="demo-box animate-slide-in-up">Slide Arr.</div>
+            <div class="demo-text">Deslizamiento suave desde abajo.</div>
+            <button class="play-button" onclick="this.previousElementSibling.previousElementSibling.style.animationName = 'none'; setTimeout(() => this.previousElementSibling.previousElementSibling.style.animationName = 'slideInUp', 10);">Repetir</button>
+            </div>
+        </div>
+        
+        <!-- Tarjeta: animation-timing-function -->
+        <div class="card">
+            <div class="card-title">.element { animation-timing-function: ease-out; }</div>
+            <div class="card-content">
+            <div class="demo-box animation-timing-easeout">Ease-out</div>
+            <div class="demo-text">La animación comienza rápido y termina más lentamente.</div>
+            </div>
+        </div>
+
+        <!-- Tarjeta: transition: width 2s (CORREGIDA) -->
+        <div class="card">
+            <div class="card-title">.element { transition: width 2s; }</div>
+            <div class="card-content">
+            <p>Pasa el cursor sobre el elemento para ver la transición:</p>
+            <div class="transition-width-corrected">Hover me</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
